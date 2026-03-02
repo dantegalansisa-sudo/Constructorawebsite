@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-dark: #0f1923;
+  --color-bg-darker: #080e14;
+  --color-bg-gray: #1e2832;
+  --color-bg-light: #f4f6f8;
+  --color-yellow: #F5A800;
+  --color-yellow-bright: #FFBF00;
+  --color-yellow-dark: #CC8C00;
+  --color-text-light: #d1d5db;
+  --color-text-muted: #8b95a1;
+  --color-border-dark: #2a3441;
+  --color-border-light: #e5e7eb;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background-color: #0f1923;
+  color: #d1d5db;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080e14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a3441;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F5A800;
+}
+
+/* Section Spacing */
+.section-padding {
+  padding: 90px 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 70px 0;
+  }
+}
