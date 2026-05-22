@@ -27,13 +27,106 @@ export interface Proyecto {
   metaDescription: string;
 }
 
-const fotos = (slug: string, count: number): string[] =>
+const fotos = (slug: string, count: number, ext = "png"): string[] =>
   Array.from(
     { length: count },
-    (_, i) => `/images/proyectos/${slug}/foto-${i + 1}.png`
+    (_, i) => `/images/proyectos/${slug}/foto-${i + 1}.${ext}`
   );
 
 export const proyectos: Proyecto[] = [
+  {
+    slug: "torre-parque-de-gazcue",
+    name: "Torre Parque de Gazcue",
+    categoria: "Construcción Residencial",
+    ubicacion: "Gazcue, Distrito Nacional",
+    estado: "Obra terminada",
+    tagline: "Vivienda vertical moderna en el corazón de la capital.",
+    resumen:
+      "Construcción de una torre residencial moderna en el sector Gazcue, Distrito Nacional: una edificación de varios niveles de apartamentos, con un nivel comercial integrado en la planta baja.",
+    descTitulo: "Vivienda vertical en la ciudad",
+    descripcion: [
+      "La Torre Parque de Gazcue es una edificación residencial de varios niveles construida en el sector Gazcue, en el Distrito Nacional —uno de los barrios más tradicionales y mejor ubicados de Santo Domingo—. El proyecto responde a la demanda de vivienda vertical moderna dentro de una zona urbana ya consolidada.",
+      "Construir en altura en un sector denso impone retos propios: una cimentación capaz de transmitir con seguridad las cargas del edificio al terreno, una estructura de hormigón armado calculada nivel por nivel, y una logística de obra cuidadosa para trabajar en un solar acotado y rodeado de otras edificaciones.",
+      "La torre integra apartamentos distribuidos en sus distintos niveles, con balcones, amplios ventanales y barandas de vidrio que aportan luz e identidad a la fachada. En la planta baja se resolvió un nivel comercial con vitrinas hacia la calle, combinando el uso residencial y el comercial en una sola edificación.",
+      "La obra se ejecutó bajo la dirección técnica del Ing. Johangel Pérez P., fundador de Zohapes Solution J.P., con supervisión directa en cada etapa: de la estructura a los acabados de fachada e interiores.",
+      "El resultado es una torre residencial terminada y habitada, que demuestra la capacidad de Zohapes Solution J.P. para llevar a término proyectos de construcción vertical en pleno entorno urbano.",
+    ],
+    ficha: [
+      {
+        label: "Tipo de obra",
+        value: "Edificación residencial — torre de apartamentos",
+      },
+      { label: "Ubicación", value: "Gazcue, Distrito Nacional" },
+      {
+        label: "Uso",
+        value: "Residencial, con nivel comercial en planta baja",
+      },
+      { label: "Sistema estructural", value: "Hormigón armado" },
+      {
+        label: "Componentes",
+        value: "Apartamentos, balcones y áreas comunes",
+      },
+      { label: "Constructora", value: "Zohapes Solution J.P, S.R.L." },
+      { label: "Dirección técnica", value: "Ing. Johangel Pérez P." },
+      { label: "Estado", value: "Obra terminada" },
+    ],
+    highlights: [
+      "Torre residencial de varios niveles en el sector Gazcue",
+      "Estructura de hormigón armado para construcción en altura",
+      "Nivel comercial integrado en la planta baja",
+      "Ejecución bajo la dirección técnica del Ing. Johangel Pérez P.",
+    ],
+    cover: "/images/proyectos/torre-parque-de-gazcue/cover.jpeg",
+    images: fotos("torre-parque-de-gazcue", 5, "jpeg"),
+    servicioRelacionado: "construccion-y-ampliacion",
+    metaDescription:
+      "Zohapes Solution J.P. construyó la Torre Parque de Gazcue, una torre residencial moderna de varios niveles con nivel comercial, en el sector Gazcue, Distrito Nacional.",
+  },
+  {
+    slug: "techo-metalico-onda",
+    name: "Techo Metálico — ONDA",
+    categoria: "Estructura Metálica",
+    ubicacion: "Distrito Nacional",
+    estado: "Obra terminada",
+    tagline: "Una estructura ligera en acero para cubrir y aprovechar nuevos espacios.",
+    resumen:
+      "Construcción de una estructura metálica ligera —un techo en acero— para cubrir y habilitar un área en la sede de la Oficina Nacional de Derecho de Autor (ONDA).",
+    descTitulo: "Una estructura ligera en acero",
+    descripcion: [
+      "Este proyecto consistió en la construcción de una estructura metálica ligera —un techo en acero— en la sede de la Oficina Nacional de Derecho de Autor (ONDA), en el Distrito Nacional. La intervención permitió cubrir y habilitar un área de terraza para su uso.",
+      "La solución se basó en un sistema de acero liviano: cerchas y perfiles metálicos que conforman la estructura portante, sobre la cual se instaló la cubierta de láminas metálicas. Es un sistema eficiente, de montaje rápido y limpio, ideal para techar espacios sin sobrecargar la edificación existente.",
+      "La obra se ejecutó bajo la dirección técnica del Ing. Johangel Pérez P., fundador de Zohapes Solution J.P.",
+    ],
+    ficha: [
+      {
+        label: "Tipo de obra",
+        value: "Estructura metálica ligera — techo en acero",
+      },
+      {
+        label: "Cliente",
+        value: "Oficina Nacional de Derecho de Autor (ONDA)",
+      },
+      { label: "Ubicación", value: "Distrito Nacional" },
+      {
+        label: "Sistema",
+        value: "Cerchas de acero y cubierta de láminas metálicas",
+      },
+      { label: "Constructora", value: "Zohapes Solution J.P, S.R.L." },
+      { label: "Dirección técnica", value: "Ing. Johangel Pérez P." },
+      { label: "Estado", value: "Obra terminada" },
+    ],
+    highlights: [
+      "Estructura metálica ligera, de montaje rápido y limpio",
+      "Cerchas de acero y cubierta de láminas metálicas",
+      "Habilitación de un área de terraza",
+      "Ejecución bajo la dirección técnica del Ing. Johangel Pérez P.",
+    ],
+    cover: "/images/proyectos/techo-metalico-onda/cover.jpeg",
+    images: fotos("techo-metalico-onda", 7, "jpeg"),
+    servicioRelacionado: "estructuras-prefabricadas",
+    metaDescription:
+      "Zohapes Solution J.P. construyó una estructura metálica ligera —un techo en acero— en la sede de la Oficina Nacional de Derecho de Autor (ONDA), Distrito Nacional.",
+  },
   {
     slug: "cuartel-femenino-fard",
     name: "Cuartel Femenino de la Fuerza Aérea",
