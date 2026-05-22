@@ -27,7 +27,7 @@ export default function CEOSection() {
             <div className="relative rounded-xl overflow-hidden aspect-[4/5] bg-[#0f1923] border-b-4 border-[#F5A800] shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
               <Image
                 src="/images/ceo.jpg"
-                alt="Ing. Johangel Pérez P. - CEO de Zohapes Solutions"
+                alt="Ing. Johangel Pérez P. - CEO de Zohapes Solution"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -66,12 +66,12 @@ export default function CEOSection() {
 
             {/* Role */}
             <p className="text-[#8b95a1] text-lg mt-2 mb-6">
-              CEO &amp; Fundador de Zohapes Solutions
+              CEO &amp; Fundador de Zohapes Solution
             </p>
 
             {/* Paragraphs */}
             <p className="text-[#d1d5db] leading-relaxed mb-4">
-              Ingeniero con visión, Johangel Pérez fundó Zohapes Solutions J.P
+              Ingeniero con visión, Johangel Pérez fundó Zohapes Solution J.P
               con la misión de transformar la industria de la construcción en
               República Dominicana a través de un enfoque dinámico,
               multidisciplinario y orientado a resultados.

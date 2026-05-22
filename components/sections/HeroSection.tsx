@@ -109,7 +109,7 @@ export default function HeroSection() {
             custom={2}
             className="text-[#d1d5db] text-lg max-w-xl leading-relaxed mb-10"
           >
-            Zohapes Solutions J.P es una empresa dinámica dedicada al mundo de
+            Zohapes Solution J.P es una empresa dinámica dedicada al mundo de
             la construcción en todas sus formas, con experiencia en proyectos
             residenciales, comerciales e industriales.
           </motion.p>

@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------------------
-// Catálogo de servicios — Zohapes Solutions J.P., S.R.L.
+// Catálogo de servicios — Zohapes Solution J.P., S.R.L.
 // Fuente: Catálogo 2026 + desarrollo de contenido.
 // Cada servicio tiene URL propia: /servicios/<slug>
 // ----------------------------------------------------------------------------
@@ -55,7 +55,7 @@ export const servicios: Servicio[] = [
     heroDescription:
       "Ejecutamos obras nuevas y ampliaciones para proyectos residenciales, comerciales e industriales, con control técnico en cada etapa.",
     intro: [
-      "La construcción y ampliación es el corazón de nuestra operación. En Zohapes Solutions J.P. acompañamos cada proyecto desde el replanteo inicial en el terreno hasta la entrega de la obra terminada, integrando obra gris, obra civil y la coordinación de las especialidades bajo una sola dirección técnica.",
+      "La construcción y ampliación es el corazón de nuestra operación. En Zohapes Solution J.P. acompañamos cada proyecto desde el replanteo inicial en el terreno hasta la entrega de la obra terminada, integrando obra gris, obra civil y la coordinación de las especialidades bajo una sola dirección técnica.",
       "Trabajamos con un alcance flexible: desde la edificación completa de viviendas, locales y naves, hasta ampliaciones que aumentan la capacidad de inmuebles existentes sin comprometer su estructura original. Cada intervención se planifica con cronograma, presupuesto y controles de calidad definidos desde el primer día.",
       "Como empresa habilitada en el Registro de Proveedores del Estado (RPE No. 132892 — Activo), ejecutamos obras conforme a la normativa vigente, lo que nos permite atender tanto a clientes privados como a proyectos institucionales.",
     ],
@@ -154,7 +154,7 @@ export const servicios: Servicio[] = [
     heroDescription:
       "Diseñamos y construimos elementos estructurales fijos en hormigón armado: la base resistente y duradera de toda edificación.",
     intro: [
-      "Las estructuras permanentes son los elementos fijos que soportan las cargas de una edificación durante toda su vida útil. En Zohapes Solutions J.P. ejecutamos estructuras de hormigón armado calculadas para resistir, con seguridad, las solicitaciones de cada proyecto.",
+      "Las estructuras permanentes son los elementos fijos que soportan las cargas de una edificación durante toda su vida útil. En Zohapes Solution J.P. ejecutamos estructuras de hormigón armado calculadas para resistir, con seguridad, las solicitaciones de cada proyecto.",
       "Cada elemento —fundación, columna, viga o losa— se construye respetando el diseño estructural, las resistencias de concreto especificadas y el detallado de acero correspondiente. El resultado es una estructura monolítica, estable y preparada para las condiciones del entorno dominicano, incluidas las exigencias sísmicas y climáticas.",
     ],
     incluye: [
@@ -247,7 +247,7 @@ export const servicios: Servicio[] = [
     heroDescription:
       "Fabricamos y montamos elementos prefabricados de concreto y metálicos para acelerar plazos sin sacrificar resistencia.",
     intro: [
-      "La construcción prefabricada permite producir elementos estructurales en condiciones controladas y montarlos en obra de forma rápida y ordenada. En Zohapes Solutions J.P. integramos sistemas prefabricados de concreto y metálicos como alternativa eficiente a la construcción tradicional.",
+      "La construcción prefabricada permite producir elementos estructurales en condiciones controladas y montarlos en obra de forma rápida y ordenada. En Zohapes Solution J.P. integramos sistemas prefabricados de concreto y metálicos como alternativa eficiente a la construcción tradicional.",
       "Este sistema reduce los tiempos de ejecución, disminuye los desperdicios y aporta uniformidad en la calidad de cada pieza. Es especialmente ventajoso en naves, proyectos repetitivos y obras donde el plazo es un factor crítico.",
     ],
     incluye: [
@@ -340,7 +340,7 @@ export const servicios: Servicio[] = [
     heroDescription:
       "Movimiento de tierra, excavación, relleno y nivelación: dejamos el terreno listo y estable para construir.",
     intro: [
-      "Antes de levantar cualquier estructura, el terreno debe estar preparado, nivelado y estable. En Zohapes Solutions J.P. ejecutamos los trabajos de movimiento de tierra y acondicionamiento del suelo que dan un inicio seguro a cualquier obra.",
+      "Antes de levantar cualquier estructura, el terreno debe estar preparado, nivelado y estable. En Zohapes Solution J.P. ejecutamos los trabajos de movimiento de tierra y acondicionamiento del suelo que dan un inicio seguro a cualquier obra.",
       "Contamos con la capacidad para operar equipos pesados —retroexcavadoras, retro pala y maquinaria de compactación— y ejecutar excavaciones, rellenos y nivelaciones con la precisión que exige la fase de cimentación. Un terreno bien preparado evita asentamientos, problemas de drenaje y sobrecostos en las etapas posteriores.",
     ],
     incluye: [
@@ -443,7 +443,7 @@ export const servicios: Servicio[] = [
     heroDescription:
       "Mantenimiento preventivo y correctivo, reparaciones estructurales y rehabilitación de edificaciones existentes.",
     intro: [
-      "Toda edificación requiere atención a lo largo del tiempo. En Zohapes Solutions J.P. ejecutamos trabajos de mantenimiento y reparación que preservan el valor, la seguridad y la funcionalidad de los inmuebles.",
+      "Toda edificación requiere atención a lo largo del tiempo. En Zohapes Solution J.P. ejecutamos trabajos de mantenimiento y reparación que preservan el valor, la seguridad y la funcionalidad de los inmuebles.",
       "Intervenimos tanto de forma preventiva —para anticipar el deterioro— como correctiva —para resolver daños ya presentes—, desde reparaciones civiles menores hasta rehabilitaciones estructurales de mayor alcance. Cada intervención se realiza con un diagnóstico previo, para atacar la causa del problema y no solo sus síntomas.",
     ],
     incluye: [
@@ -541,7 +541,7 @@ export const servicios: Servicio[] = [
     heroDescription:
       "Supervisión de obra, dirección técnica, consultoría y asistencia profesional para proyectos de construcción.",
     intro: [
-      "Detrás de toda obra bien ejecutada hay decisiones técnicas acertadas. En Zohapes Solutions J.P. ponemos a disposición de cada proyecto el respaldo de servicios profesionales de ingeniería.",
+      "Detrás de toda obra bien ejecutada hay decisiones técnicas acertadas. En Zohapes Solution J.P. ponemos a disposición de cada proyecto el respaldo de servicios profesionales de ingeniería.",
       "Acompañamos al cliente con supervisión, dirección técnica y consultoría, ya sea como complemento de nuestra construcción o como servicio independiente para proyectos de terceros. Nuestro objetivo es que cada obra se ejecute conforme a los planos, las normas y el presupuesto, con un responsable técnico velando por la calidad.",
     ],
     incluye: [

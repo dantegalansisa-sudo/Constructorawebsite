@@ -6,13 +6,13 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"
   ),
   title:
-    "Zohapes Solutions J.P | Constructora Multidisciplinaria – República Dominicana",
+    "Zohapes Solution J.P | Constructora Multidisciplinaria – República Dominicana",
   description:
     "Empresa constructora dinámica y multidisciplinaria en República Dominicana. Construcción residencial, comercial e industrial. Gestión de proyectos, diseño estructural y acabados. Solicita tu cotización.",
   keywords:
-    "constructora República Dominicana, construcción RD, Zohapes Solutions, Johangel Pérez, construcción comercial RD, remodelación Santo Domingo, ingeniería construcción",
+    "constructora República Dominicana, construcción RD, Zohapes Solution, Johangel Pérez, construcción comercial RD, remodelación Santo Domingo, ingeniería construcción",
   openGraph: {
-    title: "Zohapes Solutions J.P – Construyendo el Futuro de RD",
+    title: "Zohapes Solution J.P – Construyendo el Futuro de RD",
     description:
       "Constructora multidisciplinaria con experiencia en proyectos residenciales, comerciales e industriales. Solicita cotización gratis.",
     images: ["/images/hero-bg.jpg"],

@@ -353,7 +353,7 @@ export default function ServicioDetalle({ servicio, relacionados }: Props) {
             </h2>
             <div className="mx-auto mt-4 h-1 w-16 bg-[#F5A800]" />
             <p className="mx-auto mt-4 max-w-xl text-[#8b95a1]">
-              Fotografías de obras y trabajos ejecutados por Zohapes Solutions
+              Fotografías de obras y trabajos ejecutados por Zohapes Solution
               J.P.
             </p>
           </div>

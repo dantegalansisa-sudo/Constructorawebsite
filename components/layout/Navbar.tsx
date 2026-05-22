@@ -144,8 +144,8 @@ export default function Navbar() {
             >
               Zohapes
             </span>
-            <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#F5A800] sm:text-xs">
-              Solution
+            <span className="text-[10px] font-bold uppercase tracking-[0.1em] text-[#F5A800] sm:text-xs">
+              Solution J.P, S.R.L
             </span>
           </span>
         </Link>
@@ -243,8 +243,8 @@ export default function Navbar() {
                     >
                       Zohapes
                     </span>
-                    <span className="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F5A800]">
-                      Solution
+                    <span className="text-[9px] font-bold uppercase tracking-[0.1em] text-[#F5A800]">
+                      Solution J.P, S.R.L
                     </span>
                   </span>
                 </Link>

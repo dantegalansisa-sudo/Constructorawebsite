@@ -150,7 +150,10 @@ export default function WhyUsSection() {
                   >
                     Zohapes Solution
                   </p>
-                  <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-[#F5A800]">
+                  <p className="mt-1 text-xs font-bold uppercase tracking-[0.15em] text-[#F5A800]">
+                    J.P, S.R.L
+                  </p>
+                  <p className="mt-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/40">
                     Constructora Multidisciplinaria
                   </p>
                 </div>
@@ -175,7 +178,7 @@ export default function WhyUsSection() {
             >
               Por Qué Elegir
               <br />
-              Zohapes Solutions
+              Zohapes Solution
             </h2>
             <div className="w-10 h-1 bg-[#F5A800] mb-8" />
 

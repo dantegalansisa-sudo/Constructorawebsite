@@ -46,8 +46,8 @@ export default function Footer() {
                 >
                   Zohapes
                 </span>
-                <span className="block text-sm font-semibold tracking-widest text-[#F5A800]">
-                  Solution
+                <span className="block text-sm font-semibold tracking-[0.12em] text-[#F5A800]">
+                  Solution J.P, S.R.L
                 </span>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center justify-between border-t border-[#2a3441] pt-6 md:flex-row">
           <p className="text-xs text-[#8b95a1]">
-            &copy; 2025 Zohapes Solutions J.P, S.R.L. Todos los derechos
+            &copy; 2025 Zohapes Solution J.P, S.R.L. Todos los derechos
             reservados.
           </p>
           <p className="text-xs text-[#8b95a1]">República Dominicana</p>

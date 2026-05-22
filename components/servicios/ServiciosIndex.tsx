@@ -61,7 +61,7 @@ export default function ServiciosIndex() {
               variants={fadeUp}
               className="mt-5 max-w-2xl leading-relaxed text-[#d1d5db]"
             >
-              Zohapes Solutions J.P., S.R.L. es una empresa dinámica y
+              Zohapes Solution J.P., S.R.L. es una empresa dinámica y
               multidisciplinaria dedicada al mundo de la construcción en todas
               sus formas. Reunimos seis líneas de servicio que cubren el ciclo
               completo de una obra: del suelo a la entrega.
@@ -151,7 +151,7 @@ export default function ServiciosIndex() {
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
               href={`${WHATSAPP}?text=${encodeURIComponent(
-                "Hola, quiero asesoria sobre los servicios de Zohapes Solutions J.P."
+                "Hola, quiero asesoria sobre los servicios de Zohapes Solution J.P."
               )}`}
               target="_blank"
               rel="noopener noreferrer"

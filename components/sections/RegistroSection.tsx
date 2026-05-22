@@ -81,7 +81,7 @@ export default function RegistroSection() {
           </h2>
           <div className="mx-auto mt-4 h-1 w-16 bg-[#F5A800]" />
           <p className="mt-5 leading-relaxed text-[#8b95a1]">
-            Zohapes Solutions J.P. está inscrita en el Registro de Proveedores
+            Zohapes Solution J.P. está inscrita en el Registro de Proveedores
             del Estado (RPE) ante la Dirección General de Contrataciones
             Públicas. Este registro nos habilita para contratar y ejecutar
             obras y servicios con instituciones del Estado dominicano, conforme

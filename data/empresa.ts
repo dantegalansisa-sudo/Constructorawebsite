@@ -1,10 +1,8 @@
 // ----------------------------------------------------------------------------
 // Datos oficiales de la empresa.
+// Razón social: Zohapes Solution J.P, S.R.L
 // Fuente: Constancia del Registro de Proveedores del Estado (RPE),
 // Dirección General de Contrataciones Públicas (DGCP) — certificada 06/01/2026.
-//
-// Nota: la constancia registra la razón social como "Zohapes Solution J.P, S.R.L"
-// (Solution, en singular). El sitio usa la marca "Zohapes Solutions J.P".
 // ----------------------------------------------------------------------------
 
 export const empresa = {

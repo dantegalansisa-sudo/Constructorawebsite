@@ -18,14 +18,14 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: PageProps): Metadata {
   const servicio = getServicio(params.slug);
   if (!servicio) {
-    return { title: "Servicio no encontrado | Zohapes Solutions J.P" };
+    return { title: "Servicio no encontrado | Zohapes Solution J.P" };
   }
   return {
-    title: `${servicio.name} | Zohapes Solutions J.P`,
+    title: `${servicio.name} | Zohapes Solution J.P`,
     description: servicio.metaDescription,
     alternates: { canonical: `/servicios/${servicio.slug}` },
     openGraph: {
-      title: `${servicio.name} – Zohapes Solutions J.P`,
+      title: `${servicio.name} – Zohapes Solution J.P`,
       description: servicio.metaDescription,
       images: [servicio.images[0]],
     },
