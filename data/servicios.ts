@@ -231,7 +231,7 @@ export const servicios: Servicio[] = [
         a: "Construimos respetando el detallado y las resistencias del diseño estructural, que en RD contempla las solicitaciones sísmicas de la zona.",
       },
     ],
-    images: fotos("estructuras-permanentes", 9),
+    images: fotos("estructuras-permanentes", 8),
     metaDescription:
       "Estructuras de hormigón armado: muros, vigas, columnas y losas. Obras estructurales seguras y duraderas para edificios y naves en República Dominicana.",
   },

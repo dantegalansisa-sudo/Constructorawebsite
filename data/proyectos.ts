@@ -179,7 +179,7 @@ export const proyectos: Proyecto[] = [
       "Volumen de oficinas con fachada de muro cortina",
     ],
     cover: "/images/proyectos/nave-industrial-nigua/cover.png",
-    images: fotos("nave-industrial-nigua", 6),
+    images: fotos("nave-industrial-nigua", 4),
     video: "/video/nave-industrial-nigua.mp4",
     servicioRelacionado: "construccion-y-ampliacion",
     metaDescription:
