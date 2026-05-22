@@ -58,7 +58,7 @@ export default function ProjectsSection() {
                     }`}
                   >
                     <Image
-                      src={p.images[0]}
+                      src={p.cover}
                       alt={p.name}
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
@@ -112,7 +112,7 @@ export default function ProjectsSection() {
 
                     {/* thumbnails */}
                     <div className="flex gap-2">
-                      {p.images.slice(1, 4).map((img) => (
+                      {p.images.slice(2, 5).map((img) => (
                         <div
                           key={img}
                           className="relative h-16 w-20 shrink-0 overflow-hidden rounded-lg border border-[#2a3441]"

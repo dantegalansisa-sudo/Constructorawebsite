@@ -162,7 +162,7 @@ export default function ProyectoDetalle({ proyecto }: { proyecto: Proyecto }) {
           >
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-[#2a3441] shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
               <Image
-                src={proyecto.images[0]}
+                src={proyecto.cover}
                 alt={proyecto.name}
                 fill
                 priority
@@ -330,7 +330,7 @@ export default function ProyectoDetalle({ proyecto }: { proyecto: Proyecto }) {
               <div className="relative mx-auto aspect-[4/5] w-full max-w-[360px] overflow-hidden rounded-2xl border border-[#e5e7eb] bg-black shadow-[0_18px_50px_rgba(0,0,0,0.18)]">
                 <video
                   src={proyecto.video}
-                  poster={proyecto.images[0]}
+                  poster={proyecto.cover}
                   controls
                   playsInline
                   preload="metadata"

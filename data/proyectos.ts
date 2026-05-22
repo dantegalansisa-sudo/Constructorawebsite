@@ -19,6 +19,7 @@ export interface Proyecto {
   descripcion: string[];
   ficha: ProyectoFicha[];
   highlights: string[];
+  cover: string;
   images: string[];
   video?: string;
   servicioRelacionado: string;
@@ -76,6 +77,7 @@ export const proyectos: Proyecto[] = [
       "Andenes de carga para operación logística",
       "Volumen de oficinas con fachada de muro cortina",
     ],
+    cover: "/images/proyectos/nave-industrial-nigua/cover.png",
     images: fotos("nave-industrial-nigua", 6),
     video: "/video/nave-industrial-nigua.mp4",
     servicioRelacionado: "construccion-y-ampliacion",
