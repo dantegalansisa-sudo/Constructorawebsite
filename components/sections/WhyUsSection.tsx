@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Trophy, Compass, Shield, Clock, Smartphone } from "lucide-react";
 
@@ -100,13 +101,57 @@ export default function WhyUsSection() {
                   )`,
                 }}
               />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center px-8">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full border-2 border-[#F5A800]/30 flex items-center justify-center">
-                    <Shield className="size-8 text-[#F5A800]/40" />
-                  </div>
-                  <p className="text-white/20 text-sm font-semibold uppercase tracking-widest">
-                    Zohapes Solutions
+              {/* Floating logo */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-8 px-6">
+                <div className="relative flex items-center justify-center">
+                  {/* soft glow */}
+                  <div className="pointer-events-none absolute h-52 w-52 rounded-full bg-[#F5A800]/15 blur-3xl" />
+                  {/* rotating dashed ring */}
+                  <motion.div
+                    className="absolute rounded-full border-2 border-dashed border-[#F5A800]/25"
+                    style={{ width: "16rem", height: "16rem" }}
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 34, repeat: Infinity, ease: "linear" }}
+                  />
+                  {/* counter-rotating inner ring */}
+                  <motion.div
+                    className="absolute rounded-full border border-[#F5A800]/15"
+                    style={{ width: "13rem", height: "13rem" }}
+                    animate={{ rotate: -360 }}
+                    transition={{ duration: 26, repeat: Infinity, ease: "linear" }}
+                  />
+                  {/* floating logo */}
+                  <motion.div
+                    animate={{ y: [0, -14, 0] }}
+                    transition={{
+                      duration: 4.5,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  >
+                    <Image
+                      src="/images/logo.png"
+                      alt="Zohapes Solution"
+                      width={224}
+                      height={224}
+                      className="h-40 w-40 rounded-full md:h-48 md:w-48"
+                      style={{
+                        filter: "drop-shadow(0 22px 38px rgba(0,0,0,0.55))",
+                      }}
+                    />
+                  </motion.div>
+                </div>
+
+                {/* name */}
+                <div className="text-center">
+                  <p
+                    className="text-2xl font-extrabold uppercase tracking-wide text-white"
+                    style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+                  >
+                    Zohapes Solution
+                  </p>
+                  <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-[#F5A800]">
+                    Constructora Multidisciplinaria
                   </p>
                 </div>
               </div>
