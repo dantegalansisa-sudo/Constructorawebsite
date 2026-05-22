@@ -13,6 +13,7 @@ export default function Footer() {
   const empresaLinks = [
     { label: "Nosotros", href: "/#nosotros" },
     { label: "CEO", href: "/#ceo" },
+    { label: "Registro RPE", href: "/#registro" },
     { label: "Proyectos", href: "/#proyectos" },
     { label: "Servicios", href: "/servicios" },
     { label: "Contacto", href: "/#contacto" },
@@ -44,6 +45,12 @@ export default function Footer() {
             <p className="text-sm leading-relaxed text-[#8b95a1]">
               Empresa dinámica y multidisciplinaria dedicada a la construcción
               en República Dominicana.
+            </p>
+            <p className="mt-3 text-xs text-[#8b95a1]">
+              <span className="text-[#F5A800]">RPE No. 132892</span> &middot; RNC
+              133531992
+              <br />
+              Proveedor del Estado &mdash; Estado: Activo
             </p>
             <div className="mt-4 flex gap-3">
               <a

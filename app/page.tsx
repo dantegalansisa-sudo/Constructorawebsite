@@ -4,6 +4,7 @@ import ServicesSection from "@/components/sections/ServicesSection";
 import WhyUsSection from "@/components/sections/WhyUsSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import CEOSection from "@/components/sections/CEOSection";
+import RegistroSection from "@/components/sections/RegistroSection";
 import StatsSection from "@/components/sections/StatsSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import ContactSection from "@/components/sections/ContactSection";
@@ -19,6 +20,7 @@ export default function Home() {
       <WhyUsSection />
       <ProjectsSection />
       <CEOSection />
+      <RegistroSection />
       <StatsSection />
       <TestimonialsSection />
       <ContactSection />
