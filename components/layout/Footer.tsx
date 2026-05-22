@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Instagram, Phone, MapPin } from "lucide-react";
 import { servicios } from "@/data/servicios";
@@ -30,16 +31,25 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Column 1 - Brand */}
           <div>
-            <div>
-              <span
-                className="text-2xl font-extrabold uppercase text-white"
-                style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
-              >
-                ZOHAPES
-              </span>
-              <span className="block text-sm font-semibold tracking-widest text-[#F5A800]">
-                SOLUTIONS J.P
-              </span>
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/logo.png"
+                alt="Zohapes Solution"
+                width={56}
+                height={56}
+                className="h-14 w-14 rounded-full ring-1 ring-white/10"
+              />
+              <div>
+                <span
+                  className="text-2xl font-extrabold uppercase text-white"
+                  style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+                >
+                  Zohapes
+                </span>
+                <span className="block text-sm font-semibold tracking-widest text-[#F5A800]">
+                  Solution
+                </span>
+              </div>
             </div>
             <div className="my-4 h-0.5 w-8 bg-[#F5A800]" />
             <p className="text-sm leading-relaxed text-[#8b95a1]">

@@ -124,26 +124,30 @@ export default function Navbar() {
         <Link
           href="/"
           onClick={handleLogoClick}
-          className="relative flex shrink-0 items-center"
+          className="flex shrink-0 items-center gap-2.5"
         >
-          {!logoError ? (
+          {!logoError && (
             <Image
               src="/images/logo.png"
-              alt="Zohapes Solutions J.P."
-              width={160}
+              alt="Zohapes Solution"
+              width={48}
               height={48}
               priority
-              className="h-10 w-auto object-contain sm:h-12"
+              className="h-11 w-11 rounded-full object-contain ring-1 ring-white/10 sm:h-12 sm:w-12"
               onError={() => setLogoError(true)}
             />
-          ) : (
+          )}
+          <span className="flex flex-col leading-none">
             <span
-              className="text-2xl font-bold tracking-wide text-white sm:text-3xl"
+              className="text-xl font-extrabold uppercase tracking-wide text-white sm:text-2xl"
               style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
             >
-              ZOHAPES
+              Zohapes
             </span>
-          )}
+            <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#F5A800] sm:text-xs">
+              Solution
+            </span>
+          </span>
         </Link>
 
         {/* ---- Desktop links ---- */}
@@ -218,27 +222,31 @@ export default function Navbar() {
                 <Link
                   href="/"
                   onClick={handleLogoClick}
-                  className="flex items-center"
+                  className="flex items-center gap-2"
                 >
-                  {!logoError ? (
+                  {!logoError && (
                     <Image
                       src="/images/logo.png"
-                      alt="Zohapes Solutions J.P."
-                      width={130}
+                      alt="Zohapes Solution"
+                      width={40}
                       height={40}
-                      className="h-8 w-auto object-contain"
+                      className="h-9 w-9 rounded-full object-contain ring-1 ring-white/10"
                       onError={() => setLogoError(true)}
                     />
-                  ) : (
+                  )}
+                  <span className="flex flex-col leading-none">
                     <span
-                      className="text-xl font-bold tracking-wide text-white"
+                      className="text-lg font-extrabold uppercase tracking-wide text-white"
                       style={{
                         fontFamily: "'Barlow Condensed', sans-serif",
                       }}
                     >
-                      ZOHAPES
+                      Zohapes
                     </span>
-                  )}
+                    <span className="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F5A800]">
+                      Solution
+                    </span>
+                  </span>
                 </Link>
 
                 <button
