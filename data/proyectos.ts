@@ -16,6 +16,7 @@ export interface Proyecto {
   estado: string;
   tagline: string;
   resumen: string;
+  descTitulo: string;
   descripcion: string[];
   ficha: ProyectoFicha[];
   highlights: string[];
@@ -34,6 +35,54 @@ const fotos = (slug: string, count: number): string[] =>
 
 export const proyectos: Proyecto[] = [
   {
+    slug: "nuevo-domingo-savio",
+    name: "Nuevo Domingo Savio",
+    categoria: "Obra Pública",
+    ubicacion: "La Ciénaga y Los Guandules, Distrito Nacional",
+    estado: "Obra terminada",
+    tagline: "Construyendo el nuevo borde del río Ozama.",
+    resumen:
+      "Participación de Zohapes Solution J.P. en la ejecución de obras del proyecto Nuevo Domingo Savio, la gran regeneración urbana del borde del río Ozama, en el Distrito Nacional.",
+    descTitulo: "Parte de una gran transformación urbana",
+    descripcion: [
+      "Nuevo Domingo Savio es uno de los proyectos de regeneración urbana más importantes de la República Dominicana: una intervención de gran escala sobre el borde del río Ozama, en el Distrito Nacional, impulsada por el Estado dominicano para recuperar el hábitat de los barrios de La Ciénaga y Los Guandules y proteger a sus comunidades frente a las crecidas del río.",
+      "En una obra de esta magnitud, Zohapes Solution J.P. aportó su capacidad constructiva a la ejecución de trabajos sobre el nuevo frente de río: paseos peatonales y promenades de la avenida Paseo del Río, muros y barandas de protección de la ribera, espacios verdes y áreas recreativas, y edificaciones de servicio que acompañan los parques recuperados.",
+      "Cada frente de trabajo asumido por la empresa se ejecutó bajo la dirección técnica del Ing. Johangel Pérez P., fundador de Zohapes Solution J.P. Su supervisión directa garantizó que la obra cumpliera los estándares de calidad, seguridad y plazo que exige un proyecto de interés público de esta importancia.",
+      "Construir sobre el borde de un río impone retos particulares: estabilizar el terreno de la ribera, integrar la obra civil al paisaje y, sobre todo, ejecutar el trabajo conviviendo con la vida cotidiana de una de las zonas más densamente pobladas del país. El equipo respondió con obra civil de espacio público —aceras amplias, paseos, ciclovía y mobiliario urbano— y con edificaciones pensadas para el uso de la comunidad.",
+      "El resultado es un nuevo borde de río: un paseo público que devolvió a la comunidad su relación con el Ozama. Para Zohapes Solution J.P., haber construido parte de esta transformación es motivo de orgullo y la confirmación de su perfil como constructora preparada para obras del Estado de alcance nacional.",
+    ],
+    ficha: [
+      {
+        label: "Tipo de obra",
+        value: "Obra pública — espacio público y edificaciones",
+      },
+      { label: "Proyecto", value: "Nuevo Domingo Savio — borde del río Ozama" },
+      {
+        label: "Ubicación",
+        value: "La Ciénaga y Los Guandules, Distrito Nacional",
+      },
+      { label: "Constructora", value: "Zohapes Solution J.P, S.R.L." },
+      { label: "Dirección técnica", value: "Ing. Johangel Pérez P." },
+      { label: "Carácter", value: "Obra del Estado dominicano" },
+      {
+        label: "Alcance ejecutado",
+        value: "Paseos, ribera, espacios verdes y edificaciones de servicio",
+      },
+      { label: "Estado", value: "Obra terminada" },
+    ],
+    highlights: [
+      "Participación en un proyecto emblemático del Estado dominicano",
+      "Obra civil y espacio público sobre el borde del río Ozama",
+      "Ejecución bajo la dirección técnica del Ing. Johangel Pérez P.",
+      "Edificaciones de servicio para uso de la comunidad",
+    ],
+    cover: "/images/proyectos/nuevo-domingo-savio/portada.png",
+    images: fotos("nuevo-domingo-savio", 5),
+    servicioRelacionado: "construccion-y-ampliacion",
+    metaDescription:
+      "Zohapes Solution J.P. participó en la ejecución de obras del proyecto Nuevo Domingo Savio, la regeneración urbana del borde del río Ozama en el Distrito Nacional, Santo Domingo.",
+  },
+  {
     slug: "nave-industrial-nigua",
     name: "Nave Industrial en Nigua",
     categoria: "Construcción Industrial",
@@ -42,6 +91,7 @@ export const proyectos: Proyecto[] = [
     tagline: "Una nave industrial moderna, construida para producir y resistir.",
     resumen:
       "Edificación de una nave industrial de gran formato en una de las zonas industriales de mayor crecimiento del país, con estructura de acero de grandes luces y un volumen de oficinas integrado.",
+    descTitulo: "Una obra industrial de escala",
     descripcion: [
       "Este proyecto consistió en la construcción de una nave industrial de gran formato en San Gregorio de Nigua, provincia San Cristóbal: una de las zonas industriales que con mayor fuerza ha crecido en la República Dominicana durante los últimos años, gracias a su cercanía estratégica con los mercados de exportación.",
       "Una nave de este tipo impone retos estructurales muy particulares. La prioridad es generar grandes espacios diáfanos —amplias luces libres, sin columnas intermedias— que permitan distribuir con libertad las líneas de producción, el almacenamiento y la circulación interna. La estructura se resolvió con un sistema portante de acero, dimensionado para cubrir esas luces y soportar las cargas de cubierta y de operación.",

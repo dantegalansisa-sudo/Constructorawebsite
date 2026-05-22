@@ -190,7 +190,7 @@ export default function ProyectoDetalle({ proyecto }: { proyecto: Proyecto }) {
               El proyecto
             </p>
             <h2 className="font-[family-name:var(--font-barlow-condensed)] text-3xl font-extrabold uppercase text-[#0f1923] md:text-4xl">
-              Una obra industrial de escala
+              {proyecto.descTitulo}
             </h2>
             <div className="my-5 h-1 w-12 bg-[#F5A800]" />
             <div className="space-y-4">
@@ -239,7 +239,7 @@ export default function ProyectoDetalle({ proyecto }: { proyecto: Proyecto }) {
               Lo que define la obra
             </p>
             <h2 className="font-[family-name:var(--font-barlow-condensed)] text-3xl font-extrabold uppercase text-white md:text-4xl">
-              Claves de la construcción
+              Claves del proyecto
             </h2>
             <div className="mx-auto mt-4 h-1 w-16 bg-[#F5A800]" />
           </div>
