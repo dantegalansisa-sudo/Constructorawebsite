@@ -37,10 +37,14 @@ export interface Servicio {
 }
 
 /** Genera las rutas de las fotos oficiales de cada tema. */
-const fotos = (slug: string, count: number): string[] =>
+const fotos = (
+  slug: string,
+  count: number,
+  prefix = "foto"
+): string[] =>
   Array.from(
     { length: count },
-    (_, i) => `/images/servicios/${slug}/foto-${i + 1}.png`
+    (_, i) => `/images/servicios/${slug}/${prefix}-${i + 1}.png`
   );
 
 export const servicios: Servicio[] = [
@@ -231,7 +235,7 @@ export const servicios: Servicio[] = [
         a: "Construimos respetando el detallado y las resistencias del diseño estructural, que en RD contempla las solicitaciones sísmicas de la zona.",
       },
     ],
-    images: fotos("estructuras-permanentes", 8),
+    images: fotos("estructuras-permanentes", 8, "g"),
     metaDescription:
       "Estructuras de hormigón armado: muros, vigas, columnas y losas. Obras estructurales seguras y duraderas para edificios y naves en República Dominicana.",
   },
