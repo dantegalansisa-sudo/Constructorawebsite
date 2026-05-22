@@ -35,6 +35,57 @@ const fotos = (slug: string, count: number): string[] =>
 
 export const proyectos: Proyecto[] = [
   {
+    slug: "cuartel-femenino-fard",
+    name: "Cuartel Femenino de la Fuerza Aérea",
+    categoria: "Construcción Institucional",
+    ubicacion: "República Dominicana",
+    estado: "Obra terminada",
+    tagline: "Una obra institucional para la Fuerza Aérea de la República Dominicana.",
+    resumen:
+      "Construcción del Cuartel Femenino del Comando de Mantenimiento Aéreo: una edificación institucional de alojamiento para el personal militar femenino de la Fuerza Aérea de República Dominicana.",
+    descTitulo: "Una obra de carácter institucional",
+    descripcion: [
+      "El Cuartel Femenino del Comando de Mantenimiento Aéreo es una edificación institucional construida para la Fuerza Aérea de República Dominicana (FARD), como parte del fortalecimiento de su infraestructura. La obra responde a la creciente participación de la mujer militar en funciones técnicas, administrativas y operativas vinculadas al mantenimiento aeronáutico.",
+      "Zohapes Solution J.P. asumió la ejecución de esta obra con la responsabilidad que exige un proyecto de carácter institucional y militar. Construir para una institución de las Fuerzas Armadas implica cumplir estándares estrictos de calidad, organización y funcionalidad, además de protocolos y plazos rigurosamente definidos.",
+      "La edificación se organiza en dos pabellones de alojamiento: un Pabellón de Oficiales Femeninas, con capacidad para 44 oficiales, y un Pabellón de Alistadas, con capacidad para 106 alistadas. En conjunto ofrece espacios de descanso adecuados, organizados y funcionales, acordes con los estándares de la vida militar y las necesidades del servicio.",
+      "La obra se ejecutó bajo la dirección técnica del Ing. Johangel Pérez P., fundador de Zohapes Solution J.P. Su supervisión directa aseguró que cada etapa —de la estructura a los acabados, las áreas verdes y los accesos— cumpliera con la calidad y la seriedad que demanda una instalación de este tipo.",
+      "Para Zohapes Solution J.P., haber construido una instalación para la Fuerza Aérea de República Dominicana es una muestra de confianza y un respaldo a su capacidad para ejecutar obras de carácter institucional y para el Estado dominicano.",
+    ],
+    ficha: [
+      {
+        label: "Tipo de obra",
+        value: "Edificación institucional — alojamiento militar",
+      },
+      {
+        label: "Institución",
+        value: "Fuerza Aérea de República Dominicana (FARD)",
+      },
+      {
+        label: "Destino",
+        value: "Cuartel Femenino del Comando de Mantenimiento Aéreo",
+      },
+      {
+        label: "Componentes",
+        value: "Pabellón de Oficiales y Pabellón de Alistadas",
+      },
+      { label: "Capacidad", value: "150 plazas — 44 oficiales y 106 alistadas" },
+      { label: "Constructora", value: "Zohapes Solution J.P, S.R.L." },
+      { label: "Dirección técnica", value: "Ing. Johangel Pérez P." },
+      { label: "Estado", value: "Obra terminada e inaugurada" },
+    ],
+    highlights: [
+      "Edificación construida para la Fuerza Aérea de República Dominicana",
+      "Dos pabellones de alojamiento, con 150 plazas en total",
+      "Ejecución bajo la dirección técnica del Ing. Johangel Pérez P.",
+      "Obra de carácter institucional, con estándares militares",
+    ],
+    cover: "/images/proyectos/cuartel-femenino-fard/cover.png",
+    images: fotos("cuartel-femenino-fard", 7),
+    servicioRelacionado: "construccion-y-ampliacion",
+    metaDescription:
+      "Zohapes Solution J.P. construyó el Cuartel Femenino del Comando de Mantenimiento Aéreo, una edificación institucional de alojamiento para la Fuerza Aérea de República Dominicana.",
+  },
+  {
     slug: "nuevo-domingo-savio",
     name: "Nuevo Domingo Savio",
     categoria: "Obra Pública",
