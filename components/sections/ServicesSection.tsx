@@ -1,75 +1,10 @@
 "use client";
 
-import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import {
-  Home,
-  Building2,
-  Hammer,
-  ClipboardList,
-  Ruler,
-  Paintbrush,
-} from "lucide-react";
-
-const services = [
-  {
-    id: 1,
-    icon: "Home",
-    name: "Construcción Residencial",
-    description:
-      "Casas, chalets y viviendas personalizadas con los más altos estándares de calidad.",
-    tag: "Residencial",
-  },
-  {
-    id: 2,
-    icon: "Building2",
-    name: "Construcción Comercial",
-    description:
-      "Edificios de oficinas, locales comerciales e instalaciones industriales.",
-    tag: "Comercial",
-  },
-  {
-    id: 3,
-    icon: "Hammer",
-    name: "Remodelación y Ampliación",
-    description:
-      "Transformamos espacios existentes con renovaciones completas o parciales.",
-    tag: "Remodelación",
-  },
-  {
-    id: 4,
-    icon: "ClipboardList",
-    name: "Gestión de Proyectos",
-    description:
-      "Planificación, supervisión y control total del proyecto de principio a fin.",
-    tag: "Gestión",
-  },
-  {
-    id: 5,
-    icon: "Ruler",
-    name: "Diseño Estructural",
-    description:
-      "Ingeniería y diseño de estructuras seguras, eficientes y duraderas.",
-    tag: "Ingeniería",
-  },
-  {
-    id: 6,
-    icon: "Paintbrush",
-    name: "Acabados e Interiores",
-    description:
-      "Terminaciones de alta calidad: pisos, pintura, cielos rasos y más.",
-    tag: "Acabados",
-  },
-];
-
-const iconMap: Record<string, React.ElementType> = {
-  Home,
-  Building2,
-  Hammer,
-  ClipboardList,
-  Ruler,
-  Paintbrush,
-};
+import { ArrowRight } from "lucide-react";
+import { servicios } from "@/data/servicios";
+import { servicioIcons } from "@/components/servicios/icons";
 
 const containerVariants = {
   hidden: {},
@@ -94,10 +29,7 @@ const cardVariants = {
 
 export default function ServicesSection() {
   return (
-    <section
-      id="servicios"
-      className="py-[70px] md:py-[90px] bg-[#1e2832]"
-    >
+    <section id="servicios" className="py-[70px] md:py-[90px] bg-[#1e2832]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-left">
@@ -107,7 +39,11 @@ export default function ServicesSection() {
           <h2 className="font-[family-name:var(--font-barlow-condensed)] uppercase font-extrabold text-4xl md:text-5xl text-white mb-2">
             Lo Que Hacemos
           </h2>
-          <div className="w-10 h-1 bg-[#F5A800] mb-12" />
+          <div className="w-10 h-1 bg-[#F5A800] mb-4" />
+          <p className="text-[#8b95a1] max-w-2xl mb-12">
+            Seis líneas de servicio que cubren el ciclo completo de una obra.
+            Haz clic en cada una para conocer el detalle.
+          </p>
         </div>
 
         {/* Services Grid */}
@@ -118,40 +54,58 @@ export default function ServicesSection() {
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
         >
-          {services.map((service) => {
-            const IconComponent = iconMap[service.icon];
+          {servicios.map((service) => {
+            const IconComponent = servicioIcons[service.icon];
 
             return (
-              <motion.div
-                key={service.id}
-                variants={cardVariants}
-                className="bg-[#0f1923] border border-[#2a3441] rounded-xl p-6 hover:border-[#F5A800] hover:shadow-[0_4px_20px_rgba(245,168,0,0.15)] transition-all duration-250"
-              >
-                {/* Icon */}
-                <div className="w-12 h-12 bg-[#F5A800] rounded-lg flex items-center justify-center">
-                  {IconComponent && (
-                    <IconComponent className="size-6 text-black" />
-                  )}
-                </div>
+              <motion.div key={service.slug} variants={cardVariants}>
+                <Link
+                  href={`/servicios/${service.slug}`}
+                  className="group flex h-full flex-col rounded-xl border border-[#2a3441] bg-[#0f1923] p-6 transition-all duration-300 hover:border-[#F5A800] hover:shadow-[0_4px_20px_rgba(245,168,0,0.15)]"
+                >
+                  {/* Icon */}
+                  <div className="flex items-center justify-between">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#F5A800]">
+                      {IconComponent && (
+                        <IconComponent className="size-6 text-black" />
+                      )}
+                    </div>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-[#8b95a1]">
+                      {service.code}
+                    </span>
+                  </div>
 
-                {/* Tag */}
-                <p className="text-[#F5A800] text-xs font-bold uppercase tracking-wider mt-4">
-                  {service.tag}
-                </p>
+                  {/* Name */}
+                  <h3 className="font-[family-name:var(--font-barlow-condensed)] text-white font-bold text-xl uppercase leading-tight mt-4 transition-colors group-hover:text-[#F5A800]">
+                    {service.name}
+                  </h3>
 
-                {/* Name */}
-                <h3 className="font-[family-name:var(--font-barlow-condensed)] text-white font-bold text-lg mt-2">
-                  {service.name}
-                </h3>
+                  {/* Description */}
+                  <p className="text-[#8b95a1] text-sm mt-2 leading-relaxed flex-1">
+                    {service.heroDescription}
+                  </p>
 
-                {/* Description */}
-                <p className="text-[#8b95a1] text-sm mt-2 leading-relaxed">
-                  {service.description}
-                </p>
+                  {/* Link */}
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-[#F5A800]">
+                    Ver servicio
+                    <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </span>
+                </Link>
               </motion.div>
             );
           })}
         </motion.div>
+
+        {/* CTA */}
+        <div className="mt-10 text-center">
+          <Link
+            href="/servicios"
+            className="inline-flex items-center gap-2 rounded-lg border-2 border-[#F5A800] px-8 py-3 font-bold text-[#F5A800] transition-all duration-300 hover:bg-[#F5A800] hover:text-black"
+          >
+            Ver Todos los Servicios
+            <ArrowRight className="size-4" />
+          </Link>
+        </div>
       </div>
     </section>
   );

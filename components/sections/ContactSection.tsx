@@ -134,23 +134,23 @@ export default function ContactSection() {
                   </label>
                   <select className={inputStyles} {...register("tipo")}>
                     <option value="">Seleccionar...</option>
-                    <option value="Construcción Residencial">
-                      Construcci&oacute;n Residencial
+                    <option value="Construcción y Ampliación">
+                      Construcci&oacute;n y Ampliaci&oacute;n
                     </option>
-                    <option value="Construcción Comercial">
-                      Construcci&oacute;n Comercial
+                    <option value="Estructuras Permanentes">
+                      Estructuras Permanentes
                     </option>
-                    <option value="Remodelación y Ampliación">
-                      Remodelaci&oacute;n y Ampliaci&oacute;n
+                    <option value="Estructuras Prefabricadas">
+                      Estructuras Prefabricadas
                     </option>
-                    <option value="Gestión de Proyecto">
-                      Gesti&oacute;n de Proyecto
+                    <option value="Preparación del Terreno / Movimiento de Tierra">
+                      Preparaci&oacute;n del Terreno / Movimiento de Tierra
                     </option>
-                    <option value="Diseño Estructural">
-                      Dise&ntilde;o Estructural
+                    <option value="Mantenimiento y Reparaciones">
+                      Mantenimiento y Reparaciones
                     </option>
-                    <option value="Acabados e Interiores">
-                      Acabados e Interiores
+                    <option value="Servicios de Ingeniería">
+                      Servicios de Ingenier&iacute;a
                     </option>
                     <option value="Otro">Otro</option>
                   </select>
