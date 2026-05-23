@@ -15,6 +15,7 @@ export const empresa = {
   cuentaBancaria: true,
   domicilio:
     "Calle Primera #102, Reparto La Rosa, Santo Domingo, República Dominicana",
+  email: "zohapessolutionsjpperez@gmail.com",
   emisor: "Dirección General de Contrataciones Públicas",
   emisorSiglas: "DGCP",
   marcoLegal: ["Ley 340-06", "Decreto 416-23", "Resolución PNP-08-2023"],

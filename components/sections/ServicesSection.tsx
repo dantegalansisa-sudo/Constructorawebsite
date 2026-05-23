@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Plus } from "lucide-react";
 import { servicios } from "@/data/servicios";
+import { serviciosComplementarios } from "@/data/servicios-complementarios";
 import { servicioIcons } from "@/components/servicios/icons";
 
 const containerVariants = {
@@ -95,6 +96,30 @@ export default function ServicesSection() {
             );
           })}
         </motion.div>
+
+        {/* Servicios complementarios — chip row */}
+        <div className="mt-12 rounded-xl border border-dashed border-[#F5A800]/30 bg-[#F5A800]/5 p-5 md:p-6">
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:gap-6">
+            <div className="flex items-center gap-2.5 shrink-0">
+              <span className="flex size-8 items-center justify-center rounded-full bg-[#F5A800]">
+                <Plus className="size-4 text-black" strokeWidth={3} />
+              </span>
+              <p className="text-sm font-bold uppercase tracking-wider text-[#F5A800]">
+                También ofrecemos
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {serviciosComplementarios.map((s) => (
+                <span
+                  key={s.slug}
+                  className="rounded-full border border-[#2a3441] bg-[#0f1923] px-3.5 py-1.5 text-xs font-semibold text-[#d1d5db]"
+                >
+                  {s.title}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
 
         {/* CTA */}
         <div className="mt-10 text-center">

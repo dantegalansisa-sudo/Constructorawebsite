@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import { Phone, Instagram, Wrench, MapPin, Send } from "lucide-react";
+import { Phone, Instagram, Wrench, MapPin, Send, Mail } from "lucide-react";
+import { empresa } from "@/data/empresa";
 
 interface ContactFormData {
   nombre: string;
@@ -221,6 +222,24 @@ export default function ContactSection() {
                 <p className="text-gray-600 text-sm">
                   CEO: @ing.johangel_perez_p
                 </p>
+              </div>
+            </div>
+
+            {/* Email */}
+            <div className="mb-6 flex items-start gap-4">
+              <div className="w-12 h-12 bg-[#F5A800]/10 rounded-xl flex items-center justify-center shrink-0">
+                <Mail className="text-[#F5A800]" size={20} />
+              </div>
+              <div className="min-w-0">
+                <h4 className="font-bold text-[#0f1923] text-sm uppercase">
+                  EMAIL
+                </h4>
+                <a
+                  href={`mailto:${empresa.email}`}
+                  className="text-[#F5A800] hover:underline text-sm break-all"
+                >
+                  {empresa.email}
+                </a>
               </div>
             </div>
 

@@ -5,10 +5,15 @@ import {
   Tractor,
   Wrench,
   Ruler,
+  Package,
+  Truck,
+  Hammer,
+  PencilRuler,
+  LandPlot,
   type LucideIcon,
 } from "lucide-react";
 
-/** Mapa de íconos usados por los servicios del catálogo. */
+/** Mapa de íconos usados por los servicios (catálogo + complementarios). */
 export const servicioIcons: Record<string, LucideIcon> = {
   Building2,
   Building,
@@ -16,4 +21,9 @@ export const servicioIcons: Record<string, LucideIcon> = {
   Tractor,
   Wrench,
   Ruler,
+  Package,
+  Truck,
+  Hammer,
+  PencilRuler,
+  LandPlot,
 };

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, ChevronRight, ShieldCheck } from "lucide-react";
 import { servicios } from "@/data/servicios";
 import { servicioIcons } from "@/components/servicios/icons";
+import ServiciosComplementarios from "@/components/servicios/ServiciosComplementarios";
 
 const WHATSAPP = "https://wa.me/message/NVBS7GYDP4XLJ1";
 
@@ -136,6 +137,9 @@ export default function ServiciosIndex() {
           </motion.div>
         </div>
       </section>
+
+      {/* ==================== SERVICIOS COMPLEMENTARIOS ==================== */}
+      <ServiciosComplementarios theme="light" />
 
       {/* =========================== CTA BAND =========================== */}
       <section className="relative overflow-hidden bg-[#1e2832] py-[70px] md:py-[90px]">

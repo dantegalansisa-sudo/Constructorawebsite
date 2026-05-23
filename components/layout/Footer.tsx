@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Instagram, Phone, MapPin } from "lucide-react";
+import { Instagram, Phone, MapPin, Mail } from "lucide-react";
 import { servicios } from "@/data/servicios";
+import { empresa } from "@/data/empresa";
 
 export default function Footer() {
   const serviciosLinks = servicios.map((s) => ({
@@ -139,6 +140,15 @@ export default function Footer() {
             <div className="mb-3 flex items-center gap-2 text-sm text-[#8b95a1]">
               <Instagram className="size-4 text-[#F5A800]" />
               <span>@zohapes_solutions_j.p</span>
+            </div>
+            <div className="mb-3 flex items-start gap-2 text-sm text-[#8b95a1]">
+              <Mail className="mt-0.5 size-4 shrink-0 text-[#F5A800]" />
+              <a
+                href={`mailto:${empresa.email}`}
+                className="break-all text-[#F5A800] transition hover:text-[#FFBF00]"
+              >
+                {empresa.email}
+              </a>
             </div>
             <div className="flex items-center gap-2 text-sm text-[#8b95a1]">
               <MapPin className="size-4 text-[#F5A800]" />
