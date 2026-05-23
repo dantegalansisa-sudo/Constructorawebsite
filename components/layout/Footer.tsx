@@ -17,6 +17,7 @@ export default function Footer() {
     { label: "CEO", href: "/#ceo" },
     { label: "Registro RPE", href: "/#registro" },
     { label: "Proyectos", href: "/#proyectos" },
+    { label: "Diseños", href: "/#disenos" },
     { label: "Servicios", href: "/servicios" },
     { label: "Contacto", href: "/#contacto" },
   ];

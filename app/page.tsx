@@ -3,6 +3,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import WhyUsSection from "@/components/sections/WhyUsSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
+import DisenosSection from "@/components/sections/DisenosSection";
 import CEOSection from "@/components/sections/CEOSection";
 import RegistroSection from "@/components/sections/RegistroSection";
 import StatsSection from "@/components/sections/StatsSection";
@@ -19,6 +20,7 @@ export default function Home() {
       <ServicesSection />
       <WhyUsSection />
       <ProjectsSection />
+      <DisenosSection />
       <CEOSection />
       <RegistroSection />
       <StatsSection />
