@@ -3,7 +3,7 @@ import { proyectoSlugs } from "@/data/proyectos";
 import { servicioSlugs } from "@/data/servicios";
 import { disenoSlugs } from "@/data/disenos";
 
-const SITE_URL = "https://zohapessolutions.com";
+const SITE_URL = "https://www.zohapessolutions.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
