@@ -13,27 +13,33 @@ const fadeUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease } },
 };
 
-export default function ProjectsSection() {
+export default function ProjectsSection({
+  hideHeader = false,
+}: {
+  hideHeader?: boolean;
+} = {}) {
   return (
     <section id="proyectos" className="bg-[#0f1923] py-[70px] md:py-[90px]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center">
-          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-[#F5A800]">
-            Portafolio
-          </p>
-          <h2
-            className="text-4xl font-extrabold uppercase text-white md:text-5xl"
-            style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
-          >
-            Nuestros Proyectos
-          </h2>
-          <div className="mx-auto mb-4 mt-4 h-1 w-16 bg-[#F5A800]" />
-          <p className="mx-auto mb-12 max-w-2xl text-[#8b95a1]">
-            Obras reales ejecutadas de principio a fin. Cada proyecto cuenta su
-            propia historia: del plano a la entrega.
-          </p>
-        </div>
+        {!hideHeader && (
+          <div className="text-center">
+            <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-[#F5A800]">
+              Portafolio
+            </p>
+            <h2
+              className="text-4xl font-extrabold uppercase text-white md:text-5xl"
+              style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+            >
+              Nuestros Proyectos
+            </h2>
+            <div className="mx-auto mb-4 mt-4 h-1 w-16 bg-[#F5A800]" />
+            <p className="mx-auto mb-12 max-w-2xl text-[#8b95a1]">
+              Obras reales ejecutadas de principio a fin. Cada proyecto cuenta
+              su propia historia: del plano a la entrega.
+            </p>
+          </div>
+        )}
 
         {/* Projects */}
         <div className="space-y-8">
