@@ -14,6 +14,8 @@ import {
   PencilRuler,
   Building2,
   Home,
+  FileText,
+  Download,
 } from "lucide-react";
 import type { Diseno } from "@/data/disenos";
 
@@ -274,6 +276,54 @@ export default function DisenoDetalle({ diseno }: { diseno: Diseno }) {
           </motion.div>
         </div>
       </section>
+
+      {/* ======================= PLANO ARQUITECTÓNICO ======================= */}
+      {diseno.planoPdf && (
+        <section className="bg-[#f4f6f8] py-[70px] md:py-[90px]">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              className="relative overflow-hidden rounded-2xl bg-[#0f1923] p-8 md:p-12"
+            >
+              <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-[#F5A800]/15 blur-3xl" />
+
+              <div className="relative grid items-center gap-8 md:grid-cols-[auto,1fr,auto]">
+                <div className="flex size-16 shrink-0 items-center justify-center rounded-2xl bg-[#F5A800] text-black md:size-20">
+                  <FileText className="size-8 md:size-10" />
+                </div>
+
+                <div>
+                  <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-[#F5A800]">
+                    Documento técnico
+                  </p>
+                  <h3 className="font-[family-name:var(--font-barlow-condensed)] text-2xl font-extrabold uppercase leading-tight text-white md:text-3xl">
+                    Plano arquitectónico completo
+                  </h3>
+                  <p className="mt-3 max-w-xl text-sm leading-relaxed text-[#d1d5db]">
+                    Descarga el set de planos arquitectónicos de {diseno.name}:
+                    plantas, cortes, fachadas y detalles del proyecto en un
+                    único PDF.
+                  </p>
+                </div>
+
+                <a
+                  href={diseno.planoPdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download
+                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#F5A800] px-6 py-3.5 font-bold text-black transition-colors duration-300 hover:bg-[#FFBF00] md:whitespace-nowrap"
+                >
+                  <Download className="size-4" />
+                  Descargar PDF
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+      )}
 
       {/* ======================== GALERÍA EXTERIOR ======================== */}
       <section id="exterior" className="bg-[#0f1923] py-[70px] md:py-[90px]">

@@ -23,6 +23,7 @@ export interface Diseno {
   cover: string;
   exterior: string[];
   interior: string[];
+  planoPdf?: string;
   metaDescription: string;
 }
 
@@ -40,7 +41,7 @@ export const disenos: Diseno[] = [
   {
     slug: "villa-el-rubio",
     name: "Villa El Rubio",
-    categoria: "Diseño Residencial",
+    categoria: "Villa Contemporánea",
     estado: "Diseño completado — pendiente de construcción",
     tagline:
       "Una villa contemporánea diseñada para vivir el lujo en cada detalle.",
@@ -82,6 +83,7 @@ export const disenos: Diseno[] = [
     cover: "/images/disenos/villa-el-rubio/cover.jpg",
     exterior: fotos("villa-el-rubio", "exterior", 7),
     interior: fotos("villa-el-rubio", "interior", 6),
+    planoPdf: "/docs/planos-villa-el-rubio.pdf",
     metaDescription:
       "Villa El Rubio: diseño completo de una villa residencial contemporánea por Zohapes Solution J.P. — renders exterior e interior de una propuesta lista para construirse.",
   },
